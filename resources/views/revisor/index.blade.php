@@ -35,17 +35,7 @@
                 </div>
 
                 <div class="col-md-12 text-center">
-                    @isset($image)
-                    <div class="d-flex justify-content-center">
-                        <p>Adulti: <span class="{{ $image->adult }} mr-1 text-truncate"></span></p>
-                        <p>Satira: <span class="{{ $image->spoof }} mr-1 text-truncate"></span></p>
-                        <p>Medicina: <span class="{{ $image->medical }} mr-1 text-truncate"></span></p>
-                        <p>Violenza: <span class="{{ $image->violence }} mr-1 text-truncate"></span></p>
-                        <p>Razzismo: <span class="{{ $image->racy }} mr-1 text-truncate"></span></p>
-                    </div>
-                    @endisset
-                    
-                    
+       
                     <h4 class="card-title">{{ $announcement_to_check->title }}</h4>
                     <h5 class="my1">{{ $announcement_to_check->description }}</h5>
                     <h5 class="my1">{{ $announcement_to_check->price }}€</h5>

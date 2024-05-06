@@ -105,9 +105,7 @@ class CreateAnnouncement extends Component
                     (new ResizeImage($newImage->path, 400 , 400)),
                     (new ResizeImage($newImage->path, 500 , 500)),
                     (new ResizeImage($newImage->path, 600 , 600)),
-
-                    (new GoogleVisionSafeSearch($newImage->id)),
-                    (new GoogleVisionLabelImage($newImage->id))
+                    
                     ])->dispatch($newImage->id);
 
                     
